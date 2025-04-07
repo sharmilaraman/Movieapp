@@ -1,0 +1,314 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+body {
+     font-family: Arial, sans-serif;
+     background: linear-gradient(to bottom, #444,#666464,#f1ebeb);
+     color: white;
+     margin: 0;
+     padding: 0;
+     min-height: 100vh;
+   }
+   
+   .movie-details-container {
+     max-width: 1200px;
+     margin: auto;
+   }
+   
+   .navbar {
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     padding: 20px;
+   }
+   
+   .logo {
+     font-size: 24px;
+     font-weight: bolder;
+     margin: 0;
+     margin-left: 0;
+     font-family: 'Redressed', cursive;
+
+   }
+   
+   .search-container {
+     position: relative;
+     display: flex;
+     align-items: center;
+     width: 250px; 
+     border-radius: 5px;
+
+   }
+   
+   .search-bar {
+     width: 100%;
+     padding: 10px 40px; 
+     border: 1px solid #ccc;
+     outline: none;
+     font-size: 16px;
+     border-radius: 15px;
+     height: 6px;
+     margin: 0;
+
+   }
+   
+   .search-icon {
+     position: absolute;
+     right: 10px;
+     color: gray;
+     font-size: 18px;
+     pointer-events: none; 
+   }
+   
+   
+   .logout-btn {
+     padding: 8px 15px;
+     background: rgb(205, 200, 200);
+     border: none;
+     cursor: pointer;
+   }
+   .top-container{
+      margin-top: 30px ;
+     color:white;
+     padding: 5px;
+   }
+   
+   
+   .content {
+     display: flex;
+     /* flex-direction: column; */
+     max-width:100%;
+     justify-content: space-between;
+     align-items: flex-start;
+
+   }
+   .left-section{
+     max-width: 50%;
+   }
+   
+   .info {
+     color: yellow;
+     font-size: 16px;
+     margin-bottom: 15px;
+   }
+   .button-group {
+     display: flex;
+     gap: 30px;
+     margin-bottom: 15px;
+   }
+   .button-group p{
+     font-weight: 200;
+   }
+   .share{
+     color: #cbc6c6;
+     font-weight: 500;
+   }
+   .play-button {
+     background-color: #007bff;
+     color: white;
+     border: none;
+     padding: 10px 15px;
+     margin-right: 10px;
+     cursor: pointer;
+     border-radius: 10px;
+     display:inline;
+     height: 40px;
+     width: 120px;
+   }
+   
+  .movie-data{
+     display: flex;
+     flex-direction: column;
+     align-items: flex-start;
+     text-align: left;
+  }
+   .movie-data p {
+     margin: 5px 0;
+     color: yellow;
+     display: flex;
+     flex-wrap: wrap;
+   }
+   .movie-data strong{
+     color:black;
+   }
+   
+   .movie-description {
+     margin-top: 10px;
+     color: white;
+     font-size: 14px;
+     max-width: 500px;
+   }
+   
+   h3 {
+     margin-top: 20px;
+     font-size: 22px;
+     color: rgb(14, 13, 13);
+   }
+   .movie-description p{
+     color: black;
+     align-items: flex-start;
+   }
+   .right-section{
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     width: 100%;
+     max-width: 600px;
+   }
+  .movie-image-container {
+     position: relative;
+     display: inline-block;
+     width: 100%;
+   }
+   
+   .movie-image {
+     width: 100%;
+     height: auto;
+     /* display: block; */
+   }
+   
+   .play-over {
+     position: absolute;
+     top: 50%;
+     left: 50%;
+     transform: translate(-50%, -50%);
+     background-color: rgba(0, 0, 0, 0.6);
+     width: 60px;
+     height: 60px;
+     border-radius: 50%;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     cursor: pointer;
+   }
+   .recommendations-section{
+     margin-top: 20px;
+   }
+   .recommendations-container {
+     display: flex;
+     gap: 15px;
+     overflow-x: auto;
+     padding: 10px;
+     scrollbar-width: none;
+   }
+   .recommendation-image {
+     width: 100%;
+     height: auto;
+     border-radius: 8px;
+   }
+   
+   .movie-title {
+     color: rgb(4, 4, 4);
+   }
+   
+   .movie-rating {
+     color: rgb(4, 4, 4);
+   }
+   .movie{
+display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 0;
+   }
+
+   @media screen and (max-width: 768px) {
+     .movie-details-container {
+       padding: 10px;
+     }
+   
+     .navbar {
+       flex-direction: column;
+       align-items: center;
+       padding: 10px;
+     }
+   
+     .search-container {
+       width: 100%;
+       margin-top: 10px;
+       
+     }
+   
+     .search-bar {
+       width: 100%;
+       padding: 8px;
+     }
+   
+     .logout-btn {
+       margin-top: 10px;
+       padding: 6px 12px;
+       font-size: 14px;
+     }
+   
+     .content {
+       flex-direction: column-reverse; 
+       align-items: center;
+     }
+     .movie-data {
+          /* align-items: flex-start; */
+          text-align: left;
+      }
+  
+      .movie-data p {
+          justify-content: center;
+      }
+      .movie-description p{
+          align-items: flex-start;
+          text-align: left;
+        }
+     .right-section {
+       width: 100%;
+       max-width: 100%;
+       display: flex;
+       justify-content: center;
+       margin-bottom: 20px;
+     }
+   
+     .movie-image-container {
+       width: 100%;
+       text-align: center;
+     }
+   
+     .movie-image {
+       width: 100%;
+       height: auto;
+     }
+   
+     .left-section {
+       max-width: 100%;
+       text-align: center;
+     }
+   
+     .button-group {
+       flex-direction: column;
+       align-items: center;
+       gap: 10px;
+     }
+   
+     .play-button {
+       width: 50%;
+     }
+   
+     .recommendations-container {
+       display: flex;
+       flex-wrap: nowrap;
+       overflow-x: auto;
+       gap: 10px;
+     }
+   
+     .recommendation-card {
+       min-width: 120px;
+     }
+   
+     .recommendation-image {
+       width: 100%;
+     }
+   
+     .movie {
+       flex-direction: column;
+       align-items: center;
+     }
+   
+     .movie-title, .movie-rating {
+       text-align: center;
+     }
+   }
+   
