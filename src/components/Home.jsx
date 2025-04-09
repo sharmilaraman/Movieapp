@@ -67,7 +67,7 @@ const Home = () => {
             </div>
           </div>
           </div>
-          <div onClick={() => navigate('/movies/21')} className="movie-card">
+          <div onClick={() => navigate('/movies/Xman')} style={{ cursor: 'pointer' }} className="movie-card">
             <div className='image-container'>
             <img src={XMan3img}alt="Deadpool" />
             <div className='movie-info'>
@@ -76,7 +76,7 @@ const Home = () => {
             </div>
           </div>
           </div>
-          <div onClick={() => navigate('/movies/123')} className="movie-card">
+          <div onClick={() => navigate('/movies/Xman1')} style={{ cursor: 'pointer' }} className="movie-card">
           <div className='image-container'>
             <img src={XManimg}alt="Deadpool" />
             <div className='movie-info'>
