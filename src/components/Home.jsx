@@ -12,6 +12,16 @@ import { useNavigate } from 'react-router-dom';
 
 ;
 const Home = () => {
+  const category = [{ id: 1, category: "Romantic" },
+    { id: 2, category: "Comedy" },
+    { id: 3, category: "Thriller" },
+    { id: 4, category: "Horror" },
+    { id: 5, category: "Action" },
+    { id: 6, category: "Emotional"},
+    
+    
+
+  ];
   const navigate = useNavigate();
   const handleLogout = () => {
     navigate('/');
@@ -36,14 +46,11 @@ const Home = () => {
           Choose from tons of <span className="highlight">Categories</span> to
           Watch
         </h2>
-        <div className="category-buttons">
-          <button>Romantic</button>
-          <button>Comedy</button>
-          <button>Thriller</button>
-          <button>Horror</button>
-          <button>Action</button>
-          <button>Emotional</button>
-        </div>
+          <div className="category-buttons">
+          {category.map((movie) => (
+            <button>{movie.category}</button>
+          ))}
+          </div>
       </div>
       </div>
       <section className="movies-section">
