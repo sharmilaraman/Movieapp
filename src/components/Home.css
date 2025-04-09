@@ -1,9 +1,11 @@
 body {
-  font-family: Arial, sans-serif;
-  background: linear-gradient(to bottom, #333, #ddd);
-  color: white;
-  text-align: center;
   margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(to bottom, #222, #ccc);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .container {
@@ -204,68 +206,79 @@ body {
   padding-bottom: 10px;
 }
 @media screen and (max-width: 480px) {
+  body {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .container {
+    padding: 0 10px;
+    width: 100%;
+  }
+
   .navbar {
     flex-direction: column;
-    gap: 10px;
-    align-items:center;
+    align-items: center;
+    padding: 10px;
+    gap: 15px;
   }
 
   .logo {
     font-size: 22px;
-    margin: 0;
     text-align: center;
+    width: 15%;
   }
 
   .search-container {
-    width: 90%;
-    justify-content: center;
+    width: 10px;
+    max-width: 100%;
   }
 
   .search-bar {
-    width: 100%;
-    padding: 10px 35px;
-    font-size: 14px;
-    height: auto;
+    width: 10px;
+    padding: 10px 5px;
+    font-size: 16px;
+    height: 40px;
+    box-sizing: border-box;
+  }
+
+  .search-icon {
+    position: absolute;
+    left: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 16px;
+    color: gray;
   }
 
   .logout-btn {
-    width: 25%;
+    width: 50%;
     padding: 10px;
-    font-size: 14px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 0 auto; /* This centers it horizontally */
+    background: #888;
+    color: white;
+    border-radius: 5px;
   }
-  
 
   .banner-section {
     flex-direction: column;
     padding: 20px 10px;
   }
 
-  .banner-img {
-    max-width: 100%;
-    height: auto;
-  }
-
   .categories {
-    padding-left: 0;
-    gap: 10px;
-  }
-
-  .categories h2 {
-    font-size: 18px;
+    padding: 20px 0 0;
+    text-align: center;
+    width: 100%;
   }
 
   .category-buttons {
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
     width: 100%;
-    justify-items: center;
   }
 
   .category-buttons button {
     width: 100%;
+    padding: 10px;
     font-size: 14px;
   }
 
@@ -273,39 +286,15 @@ body {
   .newly-released h2,
   .copyright p {
     font-size: 16px;
-    text-align: center;
-    padding-left: 0;
+    padding-left: 10px;
   }
-
-  .movies-list {
-    display: flex;
-    gap: 15px;
-    overflow-x: auto;
-    padding-bottom: 10px;
-    scrollbar-width: none;
-  }
-  
 
   .movie-card {
-    width: 90%;
+    width: 250px;
   }
 
   .movie-card p,
   .movie-card span {
     font-size: 14px;
   }
-
-  .newly-released {
-    padding: 10px;
-  }
-
-  .newly-released-card {
-    width: 100%;
-  }
-
-  .copyright p {
-    font-size: 14px;
-    padding: 10px;
-  }
 }
-

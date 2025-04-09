@@ -32,7 +32,6 @@ const Login = () => {
     navigate('/home');
   };
 
-  console.log("Login component rendered");
 
   return (
     <div className="login-container">
