@@ -12,15 +12,10 @@ function App() {
       <Routes>
         <Route path="/" element={<Login />} />
         <Route path="/home" element={<Home />} />
-<<<<<<< HEAD
         <Route path='/movies/TomcruiseObliviation' element={<TomcruiseObliviation />} />
         <Route path='/movies/Xmen' element={<Xmen />} />
         <Route path='/movies/Xman' element={<Xman />} />
         <Route path='/movies/Xman1' element={<Xman1 />} />
-=======
-        {/* <Route path='/TomcruiseObliviation' element={<TomcruiseObliviation />} /> */}
-        <Route path='/movies/:id' element={<Xmen />} />
->>>>>>> 9311d2e3f8219b65c342a6005bc3a9df484aba94
       </Routes>
    </>
   )
