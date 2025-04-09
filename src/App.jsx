@@ -10,8 +10,8 @@ function App() {
       <Routes>
         <Route path="/" element={<Login />} />
         <Route path="/home" element={<Home />} />
-        <Route path='/TomcruiseObliviation' element={<TomcruiseObliviation />} />
-        <Route path='/Xmen' element={<Xmen />} />
+        {/* <Route path='/TomcruiseObliviation' element={<TomcruiseObliviation />} /> */}
+        <Route path='/movies/:id' element={<Xmen />} />
       </Routes>
    </>
   )

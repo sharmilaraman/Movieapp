@@ -49,7 +49,7 @@ const Home = () => {
       <section className="movies-section">
         <h2>Based on previous watch</h2>
         <div className="movies-list">
-          <div className="movie-card" onClick={() => navigate('/TomcruiseObliviation')} style={{ cursor: 'pointer' }}>
+          <div className="movie-card" onClick={() => navigate('/movies/TomcruiseObliviation')} style={{ cursor: 'pointer' }}>
           <div className='image-container'>
             <img src={MainImg}alt="Deadpool" />
             <div className='movie-info'>
@@ -58,7 +58,7 @@ const Home = () => {
             </div>
           </div>
           </div>
-          <div className="movie-card" onClick={() => navigate('/Xmen')} style={{ cursor: 'pointer' }}>
+          <div className="movie-card" onClick={() => navigate('/movies/Xmen/')} style={{ cursor: 'pointer' }}>
           <div className='image-container'>
             <img src={XMan4img}alt="Deadpool" />
             <div className='movie-info'>
@@ -67,7 +67,7 @@ const Home = () => {
             </div>
           </div>
           </div>
-          <div className="movie-card">
+          <div onClick={() => navigate('/movies/21')} className="movie-card">
             <div className='image-container'>
             <img src={XMan3img}alt="Deadpool" />
             <div className='movie-info'>
@@ -76,7 +76,7 @@ const Home = () => {
             </div>
           </div>
           </div>
-          <div className="movie-card">
+          <div onClick={() => navigate('/movies/123')} className="movie-card">
           <div className='image-container'>
             <img src={XManimg}alt="Deadpool" />
             <div className='movie-info'>
