@@ -35,7 +35,8 @@ const Login = () => {
 
   return (
     <div className="login-container">
-      <h1 className="logo">BINGO</h1>
+        <h1 className="logo">BINGO</h1>
+        <div className="login-box">
       <h2>
         Login to stream <span className="highlight">Unlimited Movies</span>
       </h2>
@@ -47,22 +48,23 @@ const Login = () => {
           value={email}
           autoComplete="off"
           onChange={(e) => setEmail(e.target.value)}
-        />
+        /><br />
         <input
           type="password"
           placeholder="Password"
           value={password}
           autoComplete="new-password"
           onChange={(e) => setPassword(e.target.value)}
-        />
+        /><br />
         <button type="submit" className="login-btn">Log In</button>
       </form>
 
       <button className="google-btn">Continue with Google</button>
-      <p>
-        Don't have an account? <span className="login-link">Sign Up</span>
-      </p>
-    </div>
+      <p className="account-text">
+            Already have an account? <span className="login-link">Log In</span>
+          </p>
+      </div>
+      </div>
   );
 };
 
