@@ -20,6 +20,7 @@ html {
 }
 .logo {
   position: absolute;
+  margin-top: 2px;
   left: 50px;
   font-family: 'Redressed', cursive;
   letter-spacing: 2px;
@@ -28,7 +29,7 @@ html {
 .log-btn{
   position: absolute;
   right: 200px;
-  color: rgb(68, 64, 197);
+  color:#0970D7;
   font-size: x-large;
   font-weight: bold;
   border: none;
@@ -38,7 +39,7 @@ html {
 .signup-btn{
   position: absolute;
   right: 90px;
-  color: rgb(68, 64, 197);
+  color: #0970D7;
   font-size: x-large;
   font-weight: bold;
   border: none;
@@ -111,8 +112,12 @@ form input {
     width: 90%;
   }
 
-  .login-btn {
-    width: 30%;
+  .log-btn {
+    width: 40%;
+    right: 120px;
+  }
+  .signup-btn{
+    right: 20px;
   }
   .google-btn{
     width: 60%;
@@ -120,7 +125,7 @@ form input {
 
   .logo {
     font-size: 24px;
-    left: 20px;
+    left: 0px;
     top: 10px;
   }
 

@@ -9,6 +9,7 @@ import NewlyReleasedImg from '../Images/Newmovieimg.png';
 
 import '../components/Home.css';
 
+
 const Home = () => {
   const category = [
     { id: 1, category: "Romantic" },
@@ -33,7 +34,7 @@ const Home = () => {
       <Navbar />
       <div className='banner-section'>
         <div className="banner">
-          <img src={XManimg} alt="Banner" className="banner-img" />
+          <img src={XManimg} className="banner-img" />
         </div>
         <div className="categories">
           <h2>
@@ -58,7 +59,7 @@ const Home = () => {
               style={{ cursor: 'pointer' }}
             >
               <div className='image-container'>
-                <img src={movie.image} alt={movie.title} />
+                <img src={movie.image}  />
                 <div className='movie-info'>
                   <p>{movie.title}</p>
                   <span>{movie.rating}</span>
