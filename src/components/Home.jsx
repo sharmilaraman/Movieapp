@@ -9,8 +9,6 @@ import { faSearch } from '@fortawesome/free-solid-svg-icons';
 import '../components/Home.css';
 import { useNavigate } from 'react-router-dom';
 
-
-;
 const Home = () => {
   const category = [{ id: 1, category: "Romantic" },
     { id: 2, category: "Comedy" },

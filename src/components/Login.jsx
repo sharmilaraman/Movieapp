@@ -1,6 +1,10 @@
 import React, { useState, useEffect } from 'react';
 import '../components/Login.css';
-import { useNavigate } from 'react-router-dom';
+import { useNavigate, Link } from 'react-router-dom';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faRightToBracket } from '@fortawesome/free-solid-svg-icons';
+
+
 
 const Login = () => {
   const [email, setEmail] = useState('');
@@ -35,7 +39,13 @@ const Login = () => {
 
   return (
     <div className="login-container">
-        <h1 className="logo">BINGO</h1>
+      <nav className='navbar-section'>
+      <h1 className="logo">BINGO</h1>
+      <Link to='/'><button  className='log-btn'>Log In <FontAwesomeIcon icon={faRightToBracket} />
+      </button></Link>
+      <Link to='/'><button className='signup-btn'>Sign Up</button></Link>
+      </nav>
+
         <div className="login-box">
       <h2>
         Login to stream <span className="highlight">Unlimited Movies</span>
