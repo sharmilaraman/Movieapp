@@ -1,10 +1,6 @@
 import React from 'react'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faSearch } from '@fortawesome/free-solid-svg-icons';
 import '../components/Xman.css';
 import XManimg from '../Images/XMan.jpg';
-
-
 import VideoImage from '../Images/Video.png';
 import Xman1 from '../Images/Xman1.png';
 import Xman2 from '../Images/Xman2.png';
@@ -20,15 +16,7 @@ const Xmen = () => {
         
   return (
     <div className='movie-details-container'>
-      <nav className='navbar'>
-                <h1 className='logo'>BINGO</h1>
-                <div className="search-container">
-                <FontAwesomeIcon icon={faSearch} className="search-icon" />
-                <input type="text" placeholder="Search" className="search-bar" />
-              </div>
-                <button className="logout-btn">Log Out</button>
-      
-      </nav>
+      <Navbar />
       <div className='top-container'>
       <p className="breadcrumb">Home &gt;&gt; Movies &gt;&gt;X-Man</p>
       <h2 className="title">X-Man</h2>

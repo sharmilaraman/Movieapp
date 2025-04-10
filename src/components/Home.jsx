@@ -4,10 +4,9 @@ import XMan3img from '../Images/XMan3.webp';
 import MainImg from '../Images/MainImage.png'
 import XMan4img from '../Images/XMan4.jpg';
 import NewlyReleasedImg from '../Images/Newmovieimg.png';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faSearch } from '@fortawesome/free-solid-svg-icons';
 import '../components/Home.css';
 import { useNavigate } from 'react-router-dom';
+import Navbar from '../Navbar';
 
 const Home = () => {
   const category = [{ id: 1, category: "Romantic" },
@@ -16,25 +15,11 @@ const Home = () => {
     { id: 4, category: "Horror" },
     { id: 5, category: "Action" },
     { id: 6, category: "Emotional"},
-    
-    
-
-  ];
+    ];
   const navigate = useNavigate();
-  const handleLogout = () => {
-    navigate('/');
-  };
   return (
     <div className='container'>
-     <nav className='navbar'>
-          <h1 className='logo'>BINGO</h1>
-          <div className="search-container">
-          <FontAwesomeIcon icon={faSearch} className="search-icon" />
-          <input type="text" placeholder="Search" className="search-bar" />
-        </div>
-          <button className="logout-btn" onClick={handleLogout}>Log Out</button>
-
-     </nav>
+     <Navbar />
      <div className='banner-section'>
      <div className="banner">
         <img src={XManimg} alt="Banner" className="banner-img" />
