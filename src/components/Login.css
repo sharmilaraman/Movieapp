@@ -125,7 +125,7 @@ form input {
 
   .logo {
     font-size: 24px;
-    left: 0px;
+    left: 10px;
     top: 10px;
   }
 
@@ -133,3 +133,36 @@ form input {
     padding: 20px;
   }
 }
+@media screen and (max-width: 450px) {
+  form input {
+    width: 100%;
+  }
+
+  .log-btn {
+    width: 5%;
+    right: 0;
+    margin-top: 10px;
+  }
+
+  .signup-btn {
+    width: 5%;
+    right: 0;
+    margin-top: 10px;
+  }
+
+  .google-btn {
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  .logo {
+    font-size: 20px;
+    left: 5px;
+    top: 5px;
+  }
+
+  .login-box {
+    padding: 15px;
+  }
+}
+
