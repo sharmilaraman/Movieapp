@@ -1,4 +1,3 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Redressed&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700&display=swap');
@@ -64,7 +63,6 @@ h2 {
   color: yellow;
   font-weight: bold;
 }
-
 form input {
   width: 300px;
   padding: 10px;
@@ -73,7 +71,6 @@ form input {
   border: none;
   border-radius: 4px;
 }
-
 .login-btn {
   background-color: #e71717;
   color: white;
@@ -84,7 +81,6 @@ form input {
   margin-top: 10px;
   cursor: pointer;
 }
-
 .google-btn {
   background-color: #4285f4;
   color: white;
@@ -95,24 +91,20 @@ form input {
   margin-top: 15px;
   cursor: pointer;
 }
-
 .account-text {
   margin-top: 20px;
   color: white;
 }
-
 .login-link {
   color: yellow;
   font-weight: bold;
   cursor: pointer;
 }
-
 @media screen and (max-width: 768px) {
   form input {
     width: 90%;
   }
-
-  .log-btn {
+ .log-btn {
     width: 40%;
     right: 120px;
   }
@@ -122,8 +114,7 @@ form input {
   .google-btn{
     width: 60%;
   }
-
-  .logo {
+ .logo {
     font-size: 24px;
     left: 10px;
     top: 10px;
@@ -138,7 +129,7 @@ form input {
     width: 100%;
   }
 
-  .log-btn {
+.log-btn {
     width: 5%;
     right: 0;
     margin-top: 10px;
