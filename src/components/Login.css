@@ -7,12 +7,15 @@ html {
   padding: 0;
   height: 100%;
   font-family: 'Poppins', sans-serif;
+  background-repeat: no-repeat;
+
 }
 .login-container {
   text-align: center;
   position: relative;
   width: 100%;
   justify-content: center;
+  
 }
 .navbar-section{
   margin-top: 20px;
