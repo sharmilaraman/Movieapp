@@ -29,6 +29,7 @@ const Login = () => {
       alert("Password must be at least 6 characters!");
       return;
     }
+    localStorage.setItem('isLoggedIn', 'true');
 
     alert("Login Successfully");
     setEmail('');
