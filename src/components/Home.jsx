@@ -4,13 +4,17 @@ import Navbar from '../Navbar';
 import XManimg from '../Images/XMan.jpg';
 import XMan3img from '../Images/XMan3.webp';
 import Banner from '../Images/Banner.png';
+import Banner3 from '../Images/Banner3.png';
+import Banner2 from '../Images/Banner2.png';
+
 import XMan4img from '../Images/XMan4.jpg';
-import NewlyReleasedImg from '../Images/Newmovieimg.png';
 import MainImg from '../Images/MainImage.png';
 import Jaibhim1 from '../Images/Jaibheem1.png';
 import Jaibhim2 from '../Images/jaibhim2.jpg';
 import Jaibhim3 from '../Images/Jaibhim3.jpeg';
 import TheHeights from '../Images/theheights.webp';
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faFacebookF, faTwitter } from "@fortawesome/free-brands-svg-icons";
 
 import '../components/Home.css';
 
@@ -42,7 +46,10 @@ const Home = () => {
       <Navbar />
       <div className='banner-section'>
         <div className="banner">
+        <img src={Banner3} className="banner-img" />
+
           <img src={Banner} className="banner-img" />
+          <img src={Banner2} className="banner-img" />
 
         </div>
         <div className="categories">
@@ -88,13 +95,25 @@ const Home = () => {
         </div>
       </section>
 
-      <footer className="copyright">
-        <p>
-          Copyright © Epsilon team. All Rights Reserved, Pesto. All contents and website
-          codes. Copyright of Pesto Epsilon team and unfair use may lead to actions.
-          All rights Reserved.
-        </p>
-      </footer>
+      <footer className="footer">
+  <div className="footer-content">
+    <div className="footer-caption">
+      <p>
+        Copyright @ Epsilon team. All Rights Reserved, Pesto. All contents and website
+        codes are copyright of Pesto Epsilon team abd unfair use may lead to actions.
+        All rights Reserved.
+      </p>
+    </div>
+    <div className="footer-icon">
+      <p>Connect with us</p>
+      <div className="social-icons">
+        <FontAwesomeIcon icon={faFacebookF} className="footer-font-icon" />
+        <FontAwesomeIcon icon={faTwitter} className="footer-font-icon" />
+      </div>
+    </div>
+  </div>
+</footer>
+
     </div>
   );
 };
