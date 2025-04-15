@@ -1,8 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
 
 body {
-  /* font-family: 'Poppins', Arial, sans-serif; */
-  /* background: linear-gradient(to bottom, #444, #666464, #f1ebeb); */
+  /* font-family: 'Poppins/', Arial, sans-serif; */
   color: white;
   margin: 0;
   padding: 0;
@@ -92,9 +91,9 @@ body {
 .movie-description {
   margin-top: 10px;
   color: white;
-  font-size: 14px;
+  font-size: 16px;
   max-width: 500px;
-}
+  }
 
 .movie-description p {
   color: black;
@@ -144,6 +143,7 @@ body {
 }
 .recommendations-section h3{
      color: black;
+     text-align: start;
 }
 .recommendations-container {
   display: flex;

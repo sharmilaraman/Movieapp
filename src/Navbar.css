@@ -12,7 +12,7 @@
 
   font-weight: bolder;
 
-  margin: 0;
+  margin-top:  10px;
 
   margin-left: 0;
 
@@ -38,7 +38,8 @@
 
   align-items: center;
 
-  width: 250px;
+  width: 400px;
+  margin-top:  10px;
 
   margin-left: 300px;
 
@@ -88,68 +89,109 @@
 
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 750px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px;
+  }
 
- .navbar {
-   display: block;
-   align-items: center;
+  .logo {
+    font-size: 22px;
+    margin-top: 10px;
+  }
 
-   gap: 20px;
+  .search-container {
+    width: 80%;
+    /* margin: 10px 0; */
+    margin-left: 0;
+  }
 
-   padding: 10px;
+  .search-bar {
+    padding: 8px 35px;
+    font-size: 14px;
+    height: auto;
+  }
 
- }
+  .search-icon {
+    font-size: 16px;
+    right: 10px;
+  }
 
+  .logout-btn {
+    font-size: 14px;
+    padding: 7px 14px;
+  }
+}
 
- .logo {
+@media screen and (max-width: 450px) {
+  .navbar {
+    flex-direction:row;
+    align-items: center;
+    gap: 2px;
+    justify-content: space-around;
+  }
 
-   font-size: 22px;
+  .logo {
+    font-size: 20px;
+    text-align: center;
+    margin: 5px 0;
+  }
 
-   margin: 10;
+  .search-container {
+    width: 25%;
+    /* margin: 5px 0; */
+    margin-top: 3px;
+  }
 
-   text-align:left;
+  .search-bar {
+    padding: 7px 30px;
+    font-size: 12px;
+  }
 
-   width: 100%;
+  .search-icon {
+    font-size: 14px;
+    right: 10px;
+  }
 
- }
+  .logout-btn {
+    font-size: 12px;
+    padding: 6px 12px;
+  }
+}
 
+@media screen and (max-width: 300px) {
+  .navbar {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    padding: 8px;
+  }
 
- .search-container {
+  .logo {
+    font-size: 18px;
+    text-align: center;
+  }
 
-   width: 50%;
+  .search-container {
+    width: 100%;
+    margin: 5px 0;
+  }
 
-   max-width: 300px;
+  .search-bar {
+    padding: 6px 25px;
+    font-size: 11px;
+  }
 
-   margin: 0 auto; 
+  .search-icon {
+    font-size: 12px;
+    right: 8px;
+  }
 
- }
-
-
- .search-bar {
-
-   width: 100%;
-
-   font-size: 14px;
-
-   
- }
-
-
- .search-icon {
-
-   right: 15px;
-
- }
-
-
- .logout-btn {
-
-   font-size: 14px;
-
-   padding: 6px 12px;
-
- }
-
+  .logout-btn {
+    font-size: 11px;
+    padding: 5px 10px;
+  }
 }
 
 

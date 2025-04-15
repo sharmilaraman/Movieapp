@@ -27,7 +27,7 @@ body {
 }
 
 .banner-img {
-  width: 100%;
+  width: 50%;
   max-width: 500px;
   border-radius: 10px;
 }
@@ -90,7 +90,7 @@ body {
 
 .movie-card {
   flex: 0 0 auto;
-  width: 300px;
+  width: 290px;
   text-align: center;
   position: relative;
 }
@@ -139,14 +139,14 @@ body {
 }
 
 .newly-released-card {
-  width: 100%;
-  margin: auto;
-  overflow: hidden;
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  display: flex;
+  overflow-x: auto;
+  padding-bottom: 10px;
+  scrollbar-width: none;
 }
 
 .newly-released-card img {
-  width: 100%;
+  width: 290px;
   height: auto;
   object-fit: cover;
   display: block;

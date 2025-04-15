@@ -3,9 +3,14 @@ import { useNavigate } from 'react-router-dom';
 import Navbar from '../Navbar';
 import XManimg from '../Images/XMan.jpg';
 import XMan3img from '../Images/XMan3.webp';
-import MainImg from '../Images/MainImage.png';
+import Banner from '../Images/Banner.png';
 import XMan4img from '../Images/XMan4.jpg';
 import NewlyReleasedImg from '../Images/Newmovieimg.png';
+import MainImg from '../Images/MainImage.png';
+import Jaibhim1 from '../Images/Jaibheem1.png';
+import Jaibhim2 from '../Images/jaibhim2.jpg';
+import Jaibhim3 from '../Images/Jaibhim3.jpeg';
+import TheHeights from '../Images/theheights.webp';
 
 import '../components/Home.css';
 
@@ -19,7 +24,10 @@ const Home = () => {
     { id: 5, category: "Action" },
     { id: 6, category: "Emotional" },
   ];
-
+  const newlyreleased = [{ id: 1, image: Jaibhim1 },
+  { id: 2, image: Jaibhim2 },
+  { id: 3, image: Jaibhim3 },
+  { id: 4, image: TheHeights }];
   const navigate = useNavigate();
 
   const movies = [
@@ -34,7 +42,8 @@ const Home = () => {
       <Navbar />
       <div className='banner-section'>
         <div className="banner">
-          <img src={XManimg} className="banner-img" />
+          <img src={Banner} className="banner-img" />
+
         </div>
         <div className="categories">
           <h2>
@@ -73,7 +82,9 @@ const Home = () => {
       <section className="newly-released">
         <h2>Newly Released Movies</h2>
         <div className="newly-released-card">
-          <img src={NewlyReleasedImg} alt="Newly Released Movies" />
+        {newlyreleased.map((movie) => (
+          <img src={movie.image} alt="Newly Released Movies" />
+        ))}
         </div>
       </section>
 
