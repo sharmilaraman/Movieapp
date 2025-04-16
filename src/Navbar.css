@@ -76,6 +76,24 @@
   pointer-events: none;
 
 }
+.user-link-container {
+  margin-left: 20px;
+}
+
+.user-link {
+  text-decoration: none;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  background: rgba(200, 200, 200, 0.4);
+  padding: 8px 12px;
+  border-radius: 10px;
+  transition: background 0.3s ease;
+}
+
+.user-link:hover {
+  background: rgba(45, 44, 44, 0.7);
+}
 
 .logout-btn {
 
