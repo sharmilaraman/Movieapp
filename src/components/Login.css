@@ -66,13 +66,13 @@ h2 {
   color: yellow;
   font-weight: bold;
 }
-form input {
+.login-input{
   width: 300px;
   padding: 10px;
   margin: 10px 0;
   font-size: 14px;
   border: none;
-  border-radius: 4px;
+  height: 18px;
 }
 .login-btn {
   background-color: #e71717;

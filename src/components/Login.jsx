@@ -54,14 +54,16 @@ const Login = () => {
       </h2>
 
       <form onSubmit={handleSubmit} autoComplete="off">
-        <input
+          <input
+            className='login-input'
           type="email"
           placeholder="Email"
           value={email}
           autoComplete="off"
           onChange={(e) => setEmail(e.target.value)}
         /><br />
-        <input
+          <input
+          className='login-input'
           type="password"
           placeholder="Password"
           value={password}

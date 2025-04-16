@@ -77,7 +77,7 @@
 
 }
 .user-link-container {
-  margin-left: 20px;
+  margin-left: 8cqb;
 }
 
 .user-link {
@@ -104,6 +104,8 @@
   border: none;
 
   cursor: pointer;
+  margin-left: 200px;
+
 
 }
 
@@ -120,8 +122,8 @@
   }
 
   .search-container {
-    width: 80%;
-    margin-left: 10px;
+    width: 20%;
+    margin-left: 30px;
   }
 
   .search-bar {
@@ -159,7 +161,7 @@
 
   .search-container {
     width: 25%;
-    /* margin: 5px 0; */
+    margin: 5px 0;
     margin-top: 3px;
   }
 

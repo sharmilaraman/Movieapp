@@ -58,7 +58,7 @@ const Home = () => {
           </h2>
           <div className="category-buttons">
             {category.map((movie) => (
-              <button key={movie.id}>{movie.category}</button>
+              <button  className="category-btn" key={movie.id}>{movie.category}</button>
             ))}
           </div>
         </div>
