@@ -25,7 +25,7 @@ const User = () => {
 
   return (
        <div className='container'>
-            <Navbar />
+            {/* <Navbar /> */}
       <h1>User Data</h1>
       <div className='user-table-wrapper' style={{ overflow: 'auto' }}>
         <table border={1} cellPadding={10} cellSpacing={0}>
