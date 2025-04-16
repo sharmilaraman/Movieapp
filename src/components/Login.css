@@ -67,12 +67,13 @@ h2 {
   font-weight: bold;
 }
 .login-input{
-  width: 300px;
+  width: 350px;
   padding: 10px;
   margin: 10px 0;
   font-size: 14px;
   border: none;
   height: 18px;
+  text-align: start;
 }
 .login-btn {
   background-color: #e71717;

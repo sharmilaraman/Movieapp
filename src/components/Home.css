@@ -162,8 +162,9 @@ body {
 .footer-content {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-start;
   flex-wrap: wrap;
+  /* gap: 400px; */
 }
 
 .footer-caption p {
@@ -171,7 +172,7 @@ body {
   font-size: 18px;
   color: #333;
   max-width: 600px;
-  text-align: start;
+  text-align:start;
 }
 
 .footer-icon p {
@@ -218,10 +219,9 @@ body {
   }
 
   .category-buttons {
-    display: grid;
+  display: grid;
   grid-template-columns: repeat(2, 6fr);
   box-shadow: 5px 4px 10px rgba(255, 255, 255, 0.3), 0px 6px 20px rgba(255, 255, 255, 0.5);
-
   gap: 15px;
   max-width: 300px;
   }
@@ -266,8 +266,9 @@ body {
   }
 
   .footer-content {
-    flex-direction: column;
-    align-items: flex-start;
+    display: flex;
+    /* flex-direction:row; */
+    /* align-items: flex-start; */
   }
 
   .footer-caption p {
