@@ -11,7 +11,7 @@ import XMan4img from '../Images/XMan4.jpg';
 import MainImg from '../Images/MainImage.png';
 import Jaibhim1 from '../Images/Jaibheem1.png';
 import Jaibhim2 from '../Images/jaibhim2.jpg';
-import Jaibhim3 from '../Images/Jaibhim3.jpeg';
+import Jaibhim3 from '../Images/jaibhim3.jpeg';
 import TheHeights from '../Images/theheights.webp';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faFacebookF, faTwitter } from "@fortawesome/free-brands-svg-icons";
