@@ -27,10 +27,12 @@ const Home = () => {
     { id: 5, category: "Action" },
     { id: 6, category: "Emotional" },
   ];
-  const newlyreleased = [{ id: 1, image: Jaibhim1 },
+  const newlyreleased = [
+  { id: 1, image: Jaibhim1 },
   { id: 2, image: Jaibhim2 },
   { id: 3, image: Jaibhim3 },
-  { id: 4, image: TheHeights }];
+    { id: 4, image: TheHeights }
+  ];
   const navigate = useNavigate();
 
   const movies = [

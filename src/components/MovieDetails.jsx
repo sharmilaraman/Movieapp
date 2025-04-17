@@ -1,7 +1,7 @@
 import React from 'react';
 import { useParams } from 'react-router-dom';
 import Navbar from '../Navbar';
-import VideoImage from '../Images/Video.png';
+import VideoImage from '../images/Video.png';
 import movieData from '../Data/Moviedata';
 import './MovieDetails.css'; 
 

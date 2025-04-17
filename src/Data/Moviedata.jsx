@@ -1,9 +1,9 @@
-import MainImage from '../Images/MainImage.png';
-import XMan3img from '../Images/XMan3.webp';
-import XMan4img from '../Images/XMan4.jpg';
-import Xman1 from '../Images/Xman1.png';
-import Xman2 from '../Images/Xman2.png';
-import Xman3 from '../Images/Xman3.png';
+import MainImage from '../images/MainImage.png';
+import XMan3img from '../images/XMan3.webp';
+import XMan4img from '../images/XMan4.jpg';
+import Xman1 from '../images/Xman1.png';
+import Xman2 from '../images/Xman2.png';
+import Xman3 from '../images/Xman3.png';
 
 const movieData = {
   'tomcruise-obliviation': {
