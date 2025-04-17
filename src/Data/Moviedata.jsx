@@ -5,7 +5,7 @@ import Xman1 from '../images/Xman1.png';
 import Xman2 from '../images/Xman2.png';
 import Xman3 from '../images/Xman3.png';
 
-const movieData = {
+const MovieData = {
   'tomcruise-obliviation': {
     title: 'Tom Cruise Obliviation',
     language: 'Hindi',
@@ -84,4 +84,4 @@ const movieData = {
   },
 };
 
-export default movieData;
+export default MovieData;

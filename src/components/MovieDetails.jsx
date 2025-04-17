@@ -2,12 +2,12 @@ import React from 'react';
 import { useParams } from 'react-router-dom';
 import Navbar from '../Navbar';
 import VideoImage from '../images/Video.png';
-import movieData from '../Data/Moviedata';
+import MovieData from '../Data/Moviedata';
 import './MovieDetails.css'; 
 
 const MovieDetails = () => {
   const { id } = useParams(); 
-  const movie = movieData[id]; 
+  const movie = MovieData[id]; 
 
   if (!movie) return <p>Movie not found!</p>;
 
