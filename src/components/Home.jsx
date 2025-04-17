@@ -1,18 +1,17 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import Navbar from '../Navbar';
-import XManimg from '../Images/XMan.jpg';
-import XMan3img from '../Images/XMan3.webp';
-import Banner from '../Images/Banner.png';
-import Banner3 from '../Images/Banner3.png';
-import Banner2 from '../Images/Banner2.png';
-
-import XMan4img from '../Images/XMan4.jpg';
-import MainImg from '../Images/MainImage.png';
-import Jaibhim1 from '../Images/Jaibheem1.png';
-import Jaibhim2 from '../Images/jaibhim2.jpg';
-import Jaibhim3 from '../Images/jaibhim3.jpeg';
-import TheHeights from '../Images/theheights.webp';
+import XManimg from '../images/XMan.jpg';
+import XMan3img from '../images/XMan3.webp';
+import Banner from '../images/Banner.png';
+import Banner3 from '../images/Banner3.png';
+import Banner2 from '../images/Banner2.png';
+import XMan4img from '../images/XMan4.jpg';
+import MainImg from '../images/MainImage.png';
+import Jaibhim1 from '../images/Jaibheem1.png';
+import Jaibhim2 from '../images/jaibhim2.jpg';
+import Jaibhim3 from '../images/jaibhim3.jpeg';
+import TheHeights from '../images/theheights.webp';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faFacebookF, faTwitter } from "@fortawesome/free-brands-svg-icons";
 
