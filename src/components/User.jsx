@@ -145,6 +145,7 @@ const User = () => {
                     <button  className="viewmore-btn" onClick={() => toggleViewMore(record.id)}>
                       {expandedUserId === record.id ? 'Hide' : 'View More'}
                     </button>
+                    <button className='delete-btn'>Delete</button>
                   </td>
                 </tr>
                 {expandedUserId === record.id && (

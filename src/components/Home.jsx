@@ -42,7 +42,7 @@ const Home = () => {
   ];
 
   return (
-    <div className='container'>
+    <div className='home-container'>
       <Navbar />
       <div className='banner-section'>
         <div className="banner">
