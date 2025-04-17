@@ -22,9 +22,6 @@ const Navbar = () => {
          <div className="user-link-container">
          <Link to="/user" className="user-link">User Data</Link>
          </div>
-          <div className="post-link-container">
-            <Link to="/post" className='post-link'>Post Data</Link>
-          </div>
           <button className="logout-btn" onClick={handleLogout}>Log Out</button>
      </nav>
     </>

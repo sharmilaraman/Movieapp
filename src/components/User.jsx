@@ -88,12 +88,13 @@ const User = () => {
        }
      }
    }
-     const toggleViewMore = (id) => {
+     const ViewMore = (id) => {
       setExpandedUserId(prevId => (prevId === id ? null : id));
      };
 
   return (
-       <div className='container'>
+    <div className='container'>
+      
           <h1>User Data</h1>
         <div className="add-input-container">
         <label>Enter User Name:</label>
@@ -142,10 +143,9 @@ const User = () => {
                   <td>{record.email}</td>
                   <td>{record.address.city}</td>
                   <td>
-                    <button  className="viewmore-btn" onClick={() => toggleViewMore(record.id)}>
+                    <button  className="viewmore-btn" onClick={() => ViewMore(record.id)}>
                       {expandedUserId === record.id ? 'Hide' : 'View More'}
                     </button>
-                    <button className='delete-btn'>Delete</button>
                   </td>
                 </tr>
                 {expandedUserId === record.id && (
